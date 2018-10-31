@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvDlgTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="sample"
+        android:textSize="20dp"
+        tools:ignore="SpUsage" />
+
+    <TextView
+        android:id="@+id/tvDlgContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="sample"
+        android:textSize="18dp"
+        tools:ignore="SpUsage" />
+
+    <Button
+        android:id="@+id/btnDlgConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#cccccc"
+        android:text="확인"
+        android:textSize="20dp"
+        tools:ignore="SpUsage" />
+</LinearLayout>

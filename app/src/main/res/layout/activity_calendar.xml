@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.kimkyeongbeom.test.CustomCalendarView xmlns:calendarNS="http://schemas.android.com/apk/com.example.kimkyeongbeom.test"
+        android:id="@+id/calendar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        calendarNS:dateFormat="MMMM yyyy" />
+
+    <TextView
+        android:id="@+id/tvTitleLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp"
+        android:text="제목 : "
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvContentLabel"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/scrTitle"
+        app:layout_constraintTop_toBottomOf="@+id/calendar_view" />
+
+    <ScrollView
+        android:id="@+id/scrTitle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/tvTitleLabel"
+        app:layout_constraintLeft_toRightOf="@+id/tvTitleLabel"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvTitleLabel">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="제에에에에에목"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tvContentLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="내용 : "
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/scrContent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitleLabel" />
+
+    <ScrollView
+        android:id="@+id/scrContent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:focusable="true"
+        app:layout_constraintBottom_toTopOf="@id/btnDelete"
+        app:layout_constraintLeft_toRightOf="@+id/tvContentLabel"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrTitle">
+
+        <TextView
+            android:id="@+id/tvContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="내애애애애애애용"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="삭제"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+</android.support.constraint.ConstraintLayout>

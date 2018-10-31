@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Test</string>
+
+    <string name="btn_left">왼쪽</string>
+    <string name="btn_right">오른쪽</string>
+    <string name="btn_top">위쪽</string>
+    <string name="btn_bottom">아래쪽</string>
+    <string name="item_1">item1</string>
+    <string name="item_2">item2</string>
+    <string name="item_3">item3</string>
+    <string name="item_4">item4</string>
+    <string name="btn_scroll">스크롤뷰</string>
+    <string name="btn_whether">날씨</string>
+    <string name="btn_calendar">캘린더</string>
+
+    <string name="open">열렸다</string>
+    <string name="close">닫혔다</string>
+</resources>
